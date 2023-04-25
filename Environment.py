@@ -1,4 +1,5 @@
 import gymnasium as gym
+from gymnasium.envs.classic_control.mountain_car import MountainCarEnv
 
 class Environment:
     def __init__(self, env_name: str):
@@ -13,3 +14,7 @@ class Environment:
     def step(self, action):
         # Take a step in the environment and return the observation, reward, done, and info
         pass
+
+# class CustomMountainCarEnv(MountainCarEnv):
+#     def __init__(self):
+#         super(CustomMountainCarEnv, self).__init__()
